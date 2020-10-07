@@ -1,8 +1,9 @@
 class Solution {
+    // Question is to find the longest Substring Without Repeating Characters
+    // This Solution uses HashSet Data Structure to improve the time complexity of the program
     public int lengthOfLongestSubstring(String s) {
         if(s==null||s.length()==0)
             return 0;
-
         // Hashset Datastructure makes it easier to maintain non repeating characters as it only contains unique elements
         HashSet<Character> set = new HashSet<>();
         int result = 1;
